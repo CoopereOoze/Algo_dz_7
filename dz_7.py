@@ -1,20 +1,3 @@
-# В порядке убывания, если ra > rb, то выгоднее купить a раньше b
-def fall(r):
-    return [i for _, i in sorted(enumerate(r), key=lambda x: -x[1])]
-
-r = [1, 3, 5]
-print(fall(r))
-
-"""**17(2)**"""
-
-# В порядке возрастания, чем быстрее падает цена,
-# тем раньше нужно продавать чтобы не потерять стоимость
-def height(r):
-    return [i for _, i in sorted(enumerate(r), key=lambda x: x[1])]
-
-r = [1, 3, 5]
-print(height(r))
-
 """**18**"""
 
 def is_subsequence(S, S_prime):
